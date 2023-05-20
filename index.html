@@ -1,0 +1,42 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Exemplo</title>
+  <meta name="theme-color" content="#f0f0f0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="/front/manifest.json">
+  <img src="front/—Pngtree—vector business men icon_4186858.png" alt="Ícone" style="width: 144px; height: 144px;">
+  
+</head>
+<body>
+  <h1>CRUD Exemplo</h1>
+  <form id="crud-form">
+    <input type="text" id="input-text" placeholder="Enter text">
+    <button type="submit">Create</button>
+  </form>
+
+  <ul id="list-items"></ul>
+
+  <script src="script.js"></script>
+  
+  <script>
+    
+    if ('serviceworker' in navigator) {
+      navigator.serviceworker.register('/front/service-worker.js',{ scope:'/'})
+        .then(function(registration) {
+          console.log('Service Worker registrado com sucesso:', registration);
+        })
+        .catch(function(error) {
+          console.log('Falha ao registrar o Service Worker:', error);
+        });
+    }
+
+  </script>
+
+
+</body>
+</html>

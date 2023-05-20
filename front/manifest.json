@@ -1,0 +1,25 @@
+{
+    "name": "Meu PWA",
+    "short_name": "PWA",
+    "start_url":"/",
+    "display": "standalone",
+    "background_color": "#f0f0f0",
+    "theme_color": "#3367D6",
+    "icons": [
+      {
+        "src": "—Pngtree—vector business men icon_4186858.png",
+        "sizes": "144x144",
+        "type": "image/png",
+        "purpose": "maskable"
+      },
+      
+      {
+        "src": "—Pngtree—vector business men icon_4186858.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      
+      }
+    ],
+    "splash_pages": null,
+  "prefer_related_applications": false
+  }
